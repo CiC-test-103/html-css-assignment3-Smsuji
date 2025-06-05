@@ -48,6 +48,164 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+body {
+  font-family: var(--fs-base);
+  background-color: var(--clr-stone100);
+  color: var(--clr-stone600);
+  font-size: var(--font-paragraph);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-card {
+  max-width: 736px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--fs-accent);
+  font-size: var(--font-header);
+  color: var(--clr-stone900);
+  font-weight: var(--fw-regular);
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: var(--fs-accent);
+  font-size: var(--font-sub-header);
+  font-weight: var(--fw-regular);
+  color: var(--clr-brown800);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.prep-time {
+  background-color: var(--clr-rose50);
+  padding: 0.1rem 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 2rem;
+}
+
+.prep-time h2 {
+  font-family: var(--fs-base);
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-rose800);
+  margin-bottom: 1rem;
+}
+
+.prep-time ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+.prep-time li::marker {
+  color: var(--clr-rose800);
+}
+
+.prep-time li {
+  padding-left: 1rem;
+  text-indent: 0;
+}
+
+.ingredients ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.ingredients li::marker {
+  color: var(--clr-brown800);
+}
+
+.ingredients li {
+  padding-left: 1rem;
+  text-indent: 0;
+}
+
+.instructions ol {
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.instructions li::marker {
+  color: var(--clr-brown800);
+  font-weight: var(--fw-bold);
+}
+
+.instructions li {
+  padding-left: 1rem;
+  text-indent: 0;
+}
+
+
+.nutrition {
+  margin-top: 2rem;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.nutrition td {
+  padding: 0.75rem 1rem;
+}
+
+.nutrition tr:not(:last-child) td {
+  border-bottom: 1px solid var(--clr-stone150);
+}
+
+.nutrition td:first-child {
+  color: var(--clr-stone600);
+}
+
+.nutrition td:last-child {
+  font-weight: var(--fw-bold);
+  color: var(--clr-brown800);
+}
+
+.section-divider {
+  border-bottom: 1px solid var(--clr-stone150);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
